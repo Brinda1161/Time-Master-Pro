@@ -4,18 +4,18 @@ A modern, responsive web application that combines three essential time-tracking
 
 ## Features
 
-* 🕐 Digital Clock
+->🕐 Digital Clock
 - Real-time display of current time in 12-hour format
 - Beautiful reflective design with smooth animations
 - Automatically updates every second
 
-*⏱️ Stopwatch
+->⏱️ Stopwatch
 - Precision timing with millisecond accuracy
 - Start, stop, reset, and lap functionality
 - Lap time tracking with scrollable history
 - Clean, modern interface
 
-* ⏲️ Timer
+->⏲️ Timer
 - Customizable countdown timer with hours, minutes, and seconds
 - Set, start, stop, and reset controls
 - Visual and auditory alerts when timer completes
