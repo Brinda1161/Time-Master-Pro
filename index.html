@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Time Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mode-selector">
+            <button class="mode-btn active" data-mode="clock">Clock</button>
+            <button class="mode-btn" data-mode="stopwatch">Stopwatch</button>
+            <button class="mode-btn" data-mode="timer">Timer</button>
+        </div>
+        
+        <!-- Clock Mode -->
+        <div id="clock" class="clock-mode active-mode">
+            <h2>The time is now</h2>
+            <div id="time">
+                <div><span id="hour">00</span><span>Hours</span></div>
+                <div><span id="minutes">00</span><span>Minutes</span></div>
+                <div><span id="seconds">00</span><span>Seconds</span></div>
+                <div><span id="ampm"></span></div>
+            </div>
+        </div>
+        
+        <!-- Stopwatch Mode -->
+        <div class="stopwatch-mode">
+            <div class="stopwatch-container">
+                <div class="stopwatch-display">00:00:00</div>
+                <div class="stopwatch-controls">
+                    <button class="control-btn start-btn">Start</button>
+                    <button class="control-btn stop-btn" disabled>Stop</button>
+                    <button class="control-btn reset-btn">Reset</button>
+                    <button class="control-btn lap-btn">Lap</button>
+                </div>
+                <div class="lap-times"></div>
+            </div>
+        </div>
+        
+        <!-- Timer Mode -->
+        <div class="timer-mode">
+            <div class="timer-container">
+                <div class="timer-input">
+                    <div>
+                        <input type="number" class="time-input" id="hours-input" min="0" max="99" value="0">
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div>
+                        <input type="number" class="time-input" id="minutes-input" min="0" max="59" value="0">
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div>
+                        <input type="number" class="time-input" id="seconds-input" min="0" max="59" value="0">
+                        <span class="time-label">Seconds</span>
+                    </div>
+                </div>
+                <div class="timer-display">00:00:00</div>
+                <div class="timer-controls">
+                    <button class="control-btn set-btn">Set</button>
+                    <button class="control-btn start-btn">Start</button>
+                    <button class="control-btn stop-btn" disabled>Stop</button>
+                    <button class="control-btn reset-btn">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
